@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="icones/Groupe-1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMC-shop</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+     <!-- *-*- Navbar*-*- -->
+     <nav class="navigation ">
+        <div class="container">
+            <div class="navigation--top">
+                <div class="navigation--top__shop">
+                    <form action="">
+                        <input type="text" placeholder="Rechercher un produit...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <i class="far fa-times-circle navigation--top__shop--i"></i>
+                </div>
+
+                <div class="navigation--top__logo">
+                    <a href="index.html"><img src="icones/Groupe-1.png" alt="logo"></a>
+                </div>
+
+                <div class="navigation--top__items">
+                    <form action="" class="select--language">
+                        <select name="langues" id="select--language">
+                            <option value="opt1">Français</option>
+                            <option value="opt1">Anglais</option>
+                            <option value="opt1">Chinois</option>
+                        </select>
+
+                        <select name="xof" id="select--language">
+                            <option value="opt1">XOF</option>
+                            <option value="opt1">USD</option>
+                            <option value="opt1">STR</option>
+                        </select>
+                    </form>
+
+                    <div class="box-user">
+                        <div class="userIcon"><img src="icones/Ellipse 1.png" alt="user"></div>
+                        <span class="d-none d-lg-block">Karim Kouyaté</span>
+                        <i class="fas fa-chevron-down d-none d-lg-block"></i>
+                        
+                        <!-- sous menu -->
+                        <div class="sub-menu">
+                            <ul>
+                                <li>
+                                    <a href="profil.html" class="link-menu">Profil</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="password.html" class="link-menu">Mot de passe</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="orders.html" class="link-menu">Mes commandes</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="#" class="link-menu">Se déconnecter</a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="navigation--top__items--responsive">
+                        <ul >
+                            <li class="navigation--top__items--responsivesearch"><i class="fa fa-search"></i></li>
+                            <li class="navigation--top__items--responsivebars"><i class="fas fa-bars"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ************** -->
+            <div class="navigation--bottom disp--none">
+
+                <div class="navigation--bottom__sortie">
+                    <i class="far fa-times-circle "></i>
+                </div>
+
+                <ul class="navigation--bottom__list">
+                    <li> <a href="shop.html">Catégories</a> </li>
+                    <li> <a href="shop.html">Vêtements</a> </li>
+                    <li> <a href="shop.html">Accéssoires</a> </li>
+                    <li> <a href="shop.html">Chaussures</a> </li>
+                </ul>
+
+                <form action="" class="select--language">
+                    <select name="langues" id="select--language">
+                        <option value="opt1">Français</option>
+                        <option value="opt1">Anglais</option>
+                        <option value="opt1">Chinois</option>
+                    </select>
+
+                    <select name="xof" id="select--language">
+                        <option value="opt1">XOF</option>
+                        <option value="opt1">USD</option>
+                        <option value="opt1">STR</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- *-*-Fin Navbar*-*- -->
+    <!-- *-*-Fin Navbar*-*- -->
+    <main class="main">
+        <div class="container">
+            <div class="article-detail">
+                <div class="container">
+                    <div class="row ">
+                        <!-- premiere card partie de gauche -->
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7  wow fadeInLeft">
+                            <div class="article-detail--product">
+                                <div class="article-detail--product__tall">
+                                    <img src="images/jupe.png" alt="img" id="imageBox">
+                                </div>
+                            </div>
+                            <!-- petites cards -->
+                            <div class="article-detail--product__small">
+                                <div class="card-small">
+                                    <img src="images/jupe.png" alt="img" onclick="myFunction(this) ">
+                                </div>
+        
+                                <div class="card-small">
+                                    <img src="images/jupe.png" alt="img" onclick="myFunction(this) ">
+                                </div>
+        
+                                <div class="card-small">
+                                    <img src="images/xbanner-01.jpg.pagespeed.ic.Uj5FE94mgU.webp" alt="img" onclick="myFunction(this) ">
+                                </div>
+        
+                                <div class="card-small">
+                                    <img src="images/jupe.png" alt="img" onclick="myFunction(this) ">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- premiere card partie du milieu -->
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 wow fadeInRight"  >
+                            <div class="article-detail--description">
+                                <h3 class="article-detail--description__title mb-3" >Jupe Volante</h3>    
+                                <div class="article-detail--description__prize mb-3" > 
+                                    <h3>3.000 F / Unité</h3>
+                                </div>
+
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+                                <p class="mb-5"><i>Vente en gros à partir de 7 unités*</i></p>
+                            </div>
+                
+                            <!-- partie des bouttons d'avis  -->
+                            <div class="article-detail--description__buttons">
+                                <button class="btn--pink"><i class="fas fa-shopping-bag"></i>&nbsp; Ajouter au panier </button>
+                                <button class="btn--blue"><a href="paiement.html">Acheter </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="articles--connexes">
+            <div class="container">
+                <h2>Articles connexes</h2>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card--product wow fadeInDown">
+                            <div class="card--product__illustration">
+                                <a href="details--articles.html">  
+                                    <img src="images/jupe.png" alt="products--images">
+                                </a>
+                            </div>
+
+                            <div class="card--product__description">
+                                <h3>Jupe volante</h3>
+
+                                <div class="prices">
+                                    <p><strong>3500 F</strong> / unité</p>
+                                    <p><strong>1500 F</strong> / a partir de 5 unités</p>
+                                </div>
+
+                                <div class="card--product__description--btns">
+                                    <button class="btn--blue ">
+                                        <a href="details--articles.html">
+                                            Achetez 
+                                        </a>
+                                    </button>
+
+                                    <button class="btn--white">
+                                       +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card--product wow fadeInDown">
+                            <div class="card--product__illustration">
+                                <a href="details--articles.html">  
+                                    <img src="images/jupe.png" alt="products--images">
+                                </a>
+                            </div>
+
+                            <div class="card--product__description">
+                                <h3>Jupe volante</h3>
+
+                                <div class="prices">
+                                    <p><strong>3500 F</strong> / unité</p>
+                                    <p><strong>1500 F</strong> / a partir de 5 unités</p>
+                                </div>
+
+                                <div class="card--product__description--btns">
+                                    <button class="btn--blue ">
+                                        <a href="details--articles.html">
+                                            Achetez 
+                                        </a>
+                                    </button>
+
+                                    <button class="btn--white">
+                                       +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card--product wow fadeInDown">
+                            <div class="card--product__illustration">
+                                <a href="details--articles.html">  
+                                    <img src="images/jupe.png" alt="products--images">
+                                </a>
+                            </div>
+
+                            <div class="card--product__description">
+                                <h3>Jupe volante</h3>
+
+                                <div class="prices">
+                                    <p><strong>3500 F</strong> / unité</p>
+                                    <p><strong>1500 F</strong> / a partir de 5 unités</p>
+                                </div>
+
+                                <div class="card--product__description--btns">
+                                    <button class="btn--blue ">
+                                        <a href="details--articles.html">
+                                            Achetez 
+                                        </a>
+                                    </button>
+
+                                    <button class="btn--white">
+                                       +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card--product wow fadeInDown">
+                            <div class="card--product__illustration">
+                                <a href="details--articles.html">  
+                                    <img src="images/jupe.png" alt="products--images">
+                                </a>
+                            </div>
+
+                            <div class="card--product__description">
+                                <h3>Jupe volante</h3>
+
+                                <div class="prices">
+                                    <p><strong>3500 F</strong> / unité</p>
+                                    <p><strong>1500 F</strong> / a partir de 5 unités</p>
+                                </div>
+
+                                <div class="card--product__description--btns">
+                                    <button class="btn--blue ">
+                                        <a href="details--articles.html">
+                                            Achetez 
+                                        </a>
+                                    </button>
+
+                                    <button class="btn--white">
+                                       +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="wow fadeInDown">
+        <div class="container">
+            <p>Tous droits réservés par &copy; <a href="#">LMC-shop</a></p>
+        </div>
+    </footer>
+    <!-- fin footer -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Connexion</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Vous n'avez pas de compte ? <a href="#">Inscrivez-vous</a></p>
+                    <!-- ////////////////************* -->
+                    
+                    <form action="">
+                        <div class="row mt-4">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="buttons--connexion">
+                                    <button class="btn-google">
+                                        <!-- <img src="icones/search.svg" alt="google"> &nbsp; -->
+                                        Connexion avec google
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- ******************** -->
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="buttons--connexion">
+                                    <button class="btn-facebook">
+                                        <i class="fa fa-facebook"></i> &nbsp;
+                                        Connexion avec facebook
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- *************** -->
+                        <p class="p--divider">ou</p>
+                        <!-- *************** -->
+                        
+                        <div class="mt-4 input--connexion">
+                            <input type="email" placeholder="Adresse email">
+                            <input type="password" placeholder="Mot de passe">
+                            <button type="submit" class="btn--blue w-100">Se connecter</button>
+                            <p class="mt-4 mb-4"><a href="">Mot de passe oublié</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- modals -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Connexion</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p data-toggle="modal" data-target="#exampleModal3">Vous n'avez pas de compte ? <a href="#">Inscrivez-vous</a></p>
+                    <!-- ////////////////************* -->
+                    
+                    <form action="">
+                        <div class="row mt-4">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="buttons--connexion">
+                                    <button class="btn-google">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        <!-- <img src="icones/search.svg" alt="google"> &nbsp; -->
+                                        Connexion avec google
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- ******************** -->
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="buttons--connexion">
+                                    <button class="btn-facebook">
+                                        <i class="fab fa-facebook-f"></i> &nbsp;
+                                        Connexion avec facebook
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- *************** -->
+                        <p class="p--divider">ou</p>
+                        <!-- *************** -->
+                        
+                        <div class="mt-4 input--connexion">
+                            <input type="email" placeholder="Adresse email">
+                            <input type="password" placeholder="Mot de passe">
+                            <button type="submit" class="btn--blue w-100">Se connecter</button>
+                            <p class="mt-4 mb-4"><a href="">Mot de passe oublié</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Inscription</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p data-toggle="modal" data-target="#exampleModal">Vous avez un compte ? <a href="#">Connectez-vous</a></p>
+                    <!-- ////////////////************* -->
+                    
+                    <form action="">
+                        <div class="row mt-4">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="buttons--connexion">
+                                    <button class="btn-google">
+                                        <!-- <img src="icones/search.svg" alt="google"> &nbsp; -->
+                                        <i class="fab fa-google-plus-g"></i>
+                                        S'inscrire avec google
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- ******************** -->
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="buttons--connexion">
+                                    <button class="btn-facebook">
+                                        <i class="fa fa-facebook"></i> &nbsp;
+                                        S'inscrire avec facebook
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- *************** -->
+                        <p class="p--divider">ou</p>
+                        <!-- *************** -->
+                        
+                        <div class="mt-4 input--connexion">
+                            <input type="text" name="" id="" placeholder="Prénoms">
+                            <input type="text" name="" id="" placeholder="Nom">
+                            <input type="email" placeholder="Adresse email">
+                            <input type="password" placeholder="Mot de passe">
+                            <select name="" id="">
+                                <option value="">Pays</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">Ville</option>
+                            </select>
+                            <button type="submit" class="btn--blue w-100">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button return top-->
+    <a href="#header">
+        <div class="button-return" id="btnReturn" >
+            <!-- <img src="icones/up-arrow.svg" alt="buttontop"> -->
+            <i class="fa fa-caret-up"></i>
+        </div>
+    </a>
+
+   
+
+    <!-- ************* -->
+    <!--**************  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- ********* -->
+    <script>
+        new WOW().init();
+    </script>
+    <!-- ********** -->
+
+    <script>
+        // faire afficher le button retur top
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('#btnReturn').fadeIn();
+            } else {
+                $('#btnReturn').fadeOut();
+            }
+        });
+
+        $('#btnReturn').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });	
+    </script>
+</body>
+</html>

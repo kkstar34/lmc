@@ -1,0 +1,679 @@
+main{
+    min-height: 100vh !important;
+}
+
+.header--parts{
+    display: flex;
+    position: relative;
+  
+
+    & .left--part{
+        width: 20%;
+        position: sticky;
+        top: 0;
+        overflow: auto;
+        height: 100vh;
+        background-color: $color-white;
+        box-shadow: $box-shadow;
+        padding: 2rem;
+        transition: all .4s ease-in-out;
+
+        
+        @include respond (ipadPro1){
+            position: fixed;
+            top: 0;
+            width: 28rem !important;
+            z-index: 1000;
+            height: 100vh;
+            left: -100%;
+        }
+
+        &__sortie{
+            position: absolute;
+            top: 0;
+            background-color: $color-blue;
+            color: $color-white;
+            padding:1rem 2rem;
+            right: 0rem;
+            cursor: pointer;
+            display: none;
+
+            @include respond (ipadPro1){
+               display: block;
+            }
+        }
+    }
+
+    & .right--part{
+        width: 80%;
+        padding:2rem 0rem;
+        background-color: $color-grey;
+
+        @include respond (ipadPro1){
+            width: 100%;
+        }
+    }
+}
+
+.filter{
+    padding: 1rem;
+    margin:0 1rem 2rem 0rem;
+    // border: 1px solid $c2;
+    box-shadow: $box-shadow;
+    background-color: white;
+    border-radius: .5rem;
+    width: 10rem;
+    cursor: pointer;
+    display: none;
+
+    & p{
+        color: $c2;
+    }
+
+    @include respond (ipadPro1){
+       display: block;
+    }
+}
+
+// basket
+.basket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: $color-blue;
+    width: 7rem;
+    text-align: center;
+    position: fixed;
+    top: 20rem;
+    cursor: pointer;
+    right: 0;
+    z-index: 10000;
+    border-radius: .5rem 0 0 .5rem;
+    
+    & i{
+        color: $color-white;
+        font-size: 2rem;
+    }
+
+    & span{
+        
+        padding: 0rem;
+        font-size: 1rem;
+        height: 2rem;
+        position: absolute;
+        width: 2rem;
+        top: -10px;
+        right: -14px;   
+        background-color: #FB0A72;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+.basket--responsive{
+    position: fixed;
+    top: 0;
+    width: 30rem;
+    z-index: 10000;
+    height: 100vh;
+    right: -100%;   
+    padding: 2rem;
+    background-color: $color-white;
+    transition: all .4s ease-in-out;
+    box-shadow: $box-shadow;
+
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0rem 0 2rem 0;
+        border-bottom: 1px solid $color-grey;
+
+        & .fa-shopping-bag{
+            color: $color-blue;
+            font-size: 2rem;
+        }
+
+        
+        & p{
+            color: $color-blue;
+            margin-left: 1rem;
+        }
+    }
+
+    &__bottom{
+
+        bottom: 1rem;
+        position: absolute;
+        width: 88%;
+        & p{
+            text-align: center;
+            
+            & a{
+                font-weight: bold;
+                color: blue;
+            }
+        }
+
+        &--total{
+            background: blue;
+            border-radius: .5rem;
+            display: flex;
+            margin-top: 1rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem ;
+            font-size: 1.4rem;
+
+            & p{
+                color: $color-white;
+            }
+
+            & span{
+                padding:.7rem 1rem;
+                text-align: center;
+                background-color: $color-white;
+                border-radius:.5rem;
+                color: $color-blue;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    &__items{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // margin-top: 1rem 0;
+        border-bottom: 1px solid #ccc;
+        padding:1rem 0 ;
+        & .plus--minus{
+            flex-direction: column;
+            width: 10%;
+
+            & input{
+                width: 100%;
+            }
+
+            & .plus--minus__input{
+                width: 100% !important;
+            }
+        }
+
+        & .basket--articles{
+            display: flex;
+            align-items: center;
+           
+            &__illustration{
+                & img{
+                    width: 6rem;
+                    margin-left: 1rem;
+                }
+            }
+
+            &__description{
+                margin-left: 1rem;
+
+                & h4{
+                    color: $color-blue;
+                }
+            }
+        }
+
+        & .basket--articles__sortie{
+            cursor: pointer;
+        }
+    }
+
+    .basket--sortie{
+        cursor: pointer;
+    }
+}
+
+.main--shop{
+    background-color: $color-grey;
+    padding: 4rem 0;
+}
+
+.main--orders{
+    background-color: $color-grey;
+    padding: 4rem 0;
+}
+
+.p--divider{
+    position: relative;
+    text-align: center;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: .2rem;
+        background-color: #ccc;
+        // right: 0;
+        left: 25%;
+        top: 50%;
+    }
+
+    &::before{
+        position: absolute;
+        content: "";
+        width: 20%;
+        top: 50%;
+        // left: 0;
+        right: 25%;
+        height: .2rem;
+        background-color: #ccc;
+    }
+}
+
+// ******************************
+
+.main--paiement{
+    background-color: $color-grey;
+    padding: 4rem 0;
+
+    .paiement{
+        // background-color: white;
+        padding: 3rem 15rem;
+
+        @include respond (tab-land){
+            padding: 3rem 10rem;
+        }
+
+        @include respond (tab-port){
+            padding: 3rem 8rem;
+        }
+
+        @include respond (phone){
+            padding: 2rem ;
+        }
+    }
+}
+
+.userinfos--box{
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: $color-white;
+    margin-bottom: 2rem;
+    position: relative !important;
+
+
+    & h4{
+        color: $c1;
+        font-weight: bold;
+    }
+
+    & p{
+        color: $color-black;
+    }
+
+   
+
+    &__in{
+        // display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        // & p{
+        //     // font-weight: 100;
+        //     // margin-bottom: 2rem !important;
+        // }
+
+       
+
+        // & button{
+        //     border: none;
+        //     background: transparent;
+        // }        
+    }
+
+
+    & a{
+        color: $color-blue;
+    }
+}
+
+.dflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    @include respond (tab-port){
+        display: block;
+    }
+}
+
+
+
+.userinfos--box1{
+    @include respond (tab-port){
+        overflow: auto !important;
+    }
+}
+
+.o-scr{
+    @include respond (tab-port){
+        width: 70rem;
+        padding: 0 2rem 0 0;
+        // overflow: auto;
+    }
+}
+
+
+// side account
+.side-account{
+    background-color: $color-white;
+    padding: 1rem;
+    border-radius: .5rem;
+
+    @include respond (tab-land) {
+        // display: none;
+        margin-bottom: 2rem !important;
+    }
+
+    & a{
+        & li{
+            color: $color-black;
+            transition: all .3s ease-in-out;
+            padding: 1rem 1rem 2rem;
+            font-weight: bold;
+
+            & i{
+                font-size: 2rem;
+            }
+
+            &:hover{
+                color: $color-blue;
+            }
+        }
+    }
+
+    & .menu--active{
+        color: $color-blue;
+    }
+}
+
+.input--connexion{
+    & input{
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        border: 1px solid #ccc;
+        transition: all.3s ease-in-out;
+
+        &:focus{
+            border: 1px solid $color-blue;
+            // box-shadow: $box-shadow;
+        }
+    }
+
+    & select{
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        border: 1px solid #ccc;
+        transition: all.3s ease-in-out;
+
+        &:focus{
+            border: 1px solid $color-blue;
+            // box-shadow: $box-shadow;
+        }
+    }
+}
+
+
+.account{
+    // &--left{
+    //     // background-color: $color-white;
+    //     // margin-left: 1rem;
+    //     // border-radius: 10px !important;
+    // }
+
+    &--right{
+        // background-color: $color-white;
+        // padding: 2rem !important;
+        border-radius: .5rem;
+
+        // @include respond(phone){
+        //     padding: 2rem !important; 
+        // }
+       
+        & h1{
+            margin-bottom: 2rem;
+        }
+
+        
+    }
+}
+
+.disp--none{
+    display: none;
+
+    @include respond(tab-land){
+        display: block;
+    }
+}
+
+// ************************
+// animate preloader
+.preloader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $color-white;
+    z-index: 99999;
+    overflow: hidden;
+    opacity: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+
+    &-content {        
+        text-align: center;
+
+        .logo {
+            height: 10rem;
+            width: 10rem;
+            padding: 1rem;
+            animation: 3s img linear infinite;
+            border: 2px dotted $color-blue;
+            border-radius: 50%;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+// keyframes
+
+@keyframes img {
+	0% {
+		transform: scale(.8);
+        opacity: 0;
+	}
+
+    33% {
+		transform: scale(.9);
+        opacity: 1;
+	}
+
+	66% {
+		transform: scale(1);
+        opacity: 1;
+	}
+
+    100% {
+		transform: scale(.9);
+        opacity: 0;
+	}
+}
+
+.coupon--input{
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    & input{
+        width: 70%;
+        border: none;
+        padding: 1rem;
+        border-radius: .5rem 0 0 .5rem;
+        background: #efefef;
+    }
+
+    & button{
+        width: 30%;
+        border-radius: 0 .5rem .5rem 0;
+        padding: 1rem 0 !important;
+        font-size: 14px;
+        border: 2px solid $color-blue;
+    }
+}
+
+// *********************
+.dflex1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    // @include respond (tab-port){
+    //     display: block;
+    // }
+
+    // & p{
+    //     margin-bottom: 1rem;
+    // }
+}
+
+.nav-item{
+    background-color:#dddddd61 !important;
+    width: 100% !important;
+    
+    margin-bottom: 1rem;
+   
+
+    & button{
+        width: 100% !important;
+        text-align: left;
+        
+
+        & h3{
+            color: $color-black;
+            margin: 1rem 0;
+        }
+
+        & p{
+            font-size: 1.4rem;
+            color: $color-black;
+        }
+    }
+}
+
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: $color-black !important;
+    background-color: #dddddd61 !important;
+    border: 2px solid $color-blue;
+}
+
+.userinfos--boxcmd{
+    min-height: 20vh;
+    max-height: 100vh;
+    padding: 2rem;
+    overflow: auto;
+    border-radius: .5rem;
+    background-color: $color-white;
+    margin-bottom: 2rem;
+}
+
+#formFile{
+    width: 93% !important;
+}
+
+.border-left{
+    border-left: 1px solid #ccc;
+
+    @include respond (tab-land){
+        border-left: none !important;
+    }
+}
+
+// footer
+footer{
+    box-shadow: $box-shadow;
+    & p{
+        color: $c2;
+        text-align: center;
+        padding: 2rem;
+        
+
+        & a{
+            color: $color-blue;
+        }
+    }
+}
+
+
+
+.first--box__file{
+    // position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0rem 0 2rem;
+    // width: 500px;
+    height: 150px;
+    border: 4px dashed $color-blue;
+
+    & i{
+        text-align: center !important;
+        font-size: 4rem;
+        color: $color-blue;
+        // margin:3rem 0 0;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
+
+    & p{
+        // width: 100%;
+        // height: 100%;
+        text-align: center;
+        // display: flex;
+        // align-items: center;
+        margin-top: 3rem;
+        // justify-content: center;
+        // line-height: 170px;
+        color: $color-blue;
+        // font-family: Arial;
+    }
+
+    & input{
+        position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    opacity: 0;
+    }
+}

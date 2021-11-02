@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="icones/Groupe-1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMC-shop</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body> 
+      <!-- *-*- Navbar*-*- -->
+      <nav class="navigation ">
+        <div class="container">
+            <div class="navigation--top">
+                <div class="navigation--top__shop">
+                    <form action="">
+                        <input type="text" placeholder="Rechercher un produit...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <i class="far fa-times-circle navigation--top__shop--i"></i>
+                </div>
+
+                <div class="navigation--top__logo">
+                    <a href="index.html"><img src="icones/Groupe-1.png" alt="logo"></a>
+                </div>
+
+                <div class="navigation--top__items">
+                    <form action="" class="select--language">
+                        <select name="langues" id="select--language">
+                            <option value="opt1">Français</option>
+                            <option value="opt1">Anglais</option>
+                            <option value="opt1">Chinois</option>
+                        </select>
+
+                        <select name="xof" id="select--language">
+                            <option value="opt1">XOF</option>
+                            <option value="opt1">USD</option>
+                            <option value="opt1">STR</option>
+                        </select>
+                    </form>
+
+                    <div class="box-user">
+                        <div class="userIcon"><img src="icones/Ellipse 1.png" alt="user"></div>
+                        <span class="d-none d-lg-block">Karim Kouyaté</span>
+                        <i class="fas fa-chevron-down d-none d-lg-block"></i>
+                        
+                        <!-- sous menu -->
+                        <div class="sub-menu">
+                            <ul>
+                                <li>
+                                    <a href="profil.html" class="link-menu">Profil</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="password.html" class="link-menu">Mot de passe</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="orders.html" class="link-menu">Mes commandes</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="#" class="link-menu">Se déconnecter</a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="navigation--top__items--responsive">
+                        <ul >
+                            <li class="navigation--top__items--responsivesearch"><i class="fa fa-search"></i></li>
+                            <li class="navigation--top__items--responsivebars"><i class="fas fa-bars"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ************** -->
+            <div class="navigation--bottom disp--none">
+
+                <div class="navigation--bottom__sortie">
+                    <i class="far fa-times-circle "></i>
+                </div>
+
+                <ul class="navigation--bottom__list">
+                    <li> <a href="shop.html">Catégories</a> </li>
+                    <li> <a href="shop.html">Vêtements</a> </li>
+                    <li> <a href="shop.html">Accéssoires</a> </li>
+                    <li> <a href="shop.html">Chaussures</a> </li>
+                </ul>
+
+                <form action="" class="select--language">
+                    <select name="langues" id="select--language">
+                        <option value="opt1">Français</option>
+                        <option value="opt1">Anglais</option>
+                        <option value="opt1">Chinois</option>
+                    </select>
+
+                    <select name="xof" id="select--language">
+                        <option value="opt1">XOF</option>
+                        <option value="opt1">USD</option>
+                        <option value="opt1">STR</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- *-*-Fin Navbar*-*- -->
+    <!--*/*/* basket */*/* -->
+    <div class="basket wow fadeInLeft">
+        <div class="position-relative">
+            <p>
+                <i class="fas fa-shopping-bag"></i>
+            </p>
+            <span>1</span>
+        </div>
+    </div>
+
+    <div class="basket--responsive">
+        <div class="basket--responsive__title">
+            <div class="d-flex">
+                <i class="fas fa-shopping-bag"></i>
+                <p>3 Articles</p>
+            </div>
+
+            <div class="basket--sortie">
+                <i class="far fa-times-circle"></i>
+            </div>
+        </div>
+        <!--********************  -->
+        <div class="basket--responsive__items">
+          
+            <div class="plus--minus">
+                <form action="">
+                    <input type="button" value="+" class="plus--minus__btn" >
+                    <div class="plus--minus__input"> 1 </div>
+                    <input type="button" value="-" class="plus--minus__btn">
+                </form>
+            </div>
+          
+
+            <div class="basket--articles">
+                <div class="basket--articles__illustration">
+                    <img src="images/jupe.png" alt="img--articles">
+                </div>
+
+                <div class="basket--articles__description">
+                    <p>Jupe volante</p>
+                    <h4>2000 F</h4>
+                    <p>3 unités</p>
+                </div>
+            </div>
+
+            <div class="basket--articles__sortie">
+                <i class="far fa-times-circle"></i>
+            </div>
+        </div>
+        <!--********************  -->
+
+        <div class="basket--responsive__bottom">
+            <p><a href="paiement.html">Avez-vous un coupon ?</a></p>
+
+            <div class="basket--responsive__bottom--total">
+                <p>Mon panier</p>
+                <span>1002000frs</span>
+            </div>
+        </div>
+    </div>
+    <!--*/*/* fin basket */*/* -->
+    <!-- ************** -->
+    <main class="main--paiement">
+        <div class="container">
+           <div class="paiement">
+               <form action="">
+                    <div class="userinfos--box userinfos--box1">
+                        <div class="userinfos--box__in ">
+                            <div class="dflex">
+                                <p>Sous total (3 articles)</p>
+                                <p >3000 frs</p>
+                            </div>
+
+                            <div class="dflex">
+                                <p>Frais de livraison</p>
+                                <p>1000 frs</p>
+                            </div>
+
+                            <div class="dflex">
+                                <p>Coupon</p>
+                                <div class="coupon--input">
+                                    <input type="text" placeholder="coupon...">
+                                    <button class="btn--blue">Appliquer</button>
+                                </div>
+                            </div>
+
+                            <div class="dflex">
+                                <p>Coupon</p>
+                                <p>4000 frs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ************ -->
+                    <div class="userinfos--box">
+                        <div class="update">
+                            <h2><strong>Numero de téléphone</strong></h2>
+                            <p  data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Ajouter un contact</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="contact--box">
+                                    <p>15222222222222</p>
+                                </div> 
+                            </div>
+                        </div>                       
+                    </div>
+
+                    <!-- ************ -->
+                    <div class="userinfos--box">
+                        <div class="update mb-4">
+                            <h2><strong>Différentes adresses</strong></h2>
+                            <p data-toggle="modal"  data-bs-toggle="modal" data-bs-target="#staticBackdrop4">Ajouter une adresse</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6 col-md-6 col-lg-4">
+                                <label class="radio--card">
+                                    <input type="radio" name="radioname" value="one_value" checked="checked"/>
+                                    
+                                    <div class="radio--card-overlay">
+                                    <div class="delete--card">
+                                        <i class="fas fa-pencil-alt pencil--circle " data-bs-toggle="modal" data-bs-target="#staticBackdrop7"></i>
+                                        <i class="far fa-times-circle times--circle"   ></i>
+                                    </div>
+                                    <div class="radio--card-content">
+                                        <span class="radio--card-title">Maison</span><br/>
+                                        <span class="radio--card-subtitle">Riviera Bonoumin non loin de Abidjan mall</span>
+                                    </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="col-xs-6 col-md-6 col-md-6 col-lg-4">
+                                <label class="radio--card">
+                                    <input type="radio" name="radioname" value="one_value" checked="checked"/>
+                                    <div class="radio--card-overlay">
+                                        <div class="delete--card">
+                                            <i class="fas fa-pencil-alt pencil--circle " data-bs-toggle="modal" data-bs-target="#staticBackdrop7"></i>
+                                            <i class="far fa-times-circle times--circle"   ></i>
+                                        </div>
+                                        <div class="radio--card-content">
+                                            <span class="radio--card-title">Travail</span><br/>
+                                            <span class="radio--card-subtitle">Riviera Bonoumin, non loin de Abidjan Mall</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- ************ -->
+                    <div class="userinfos--box">
+                        <h2><strong>Option de paiement</strong></h2>
+
+                        <!-- *********** -->
+                        <div class="mt-5">
+                            <label >
+                                <input type="radio" name="radio">
+                                Cash à la livraison lo
+                            </label>   
+                        </div>    
+                    </div>
+
+                    <button type="submit" class="btn--blue w-100 mt-4">Procéder au paiement</button>
+                </form>
+           </div>
+        </div> 
+    </main>
+
+    <!-- footer -->
+    <footer class="wow fadeInDown">
+        <div class="container">
+            <p>Tous droits réservés par &copy; <a href="#">LMC-shop</a></p>
+        </div>
+    </footer>
+    <!-- fin footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Ajouter nouveau numero</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body my-3">
+                    <form action="">
+                        <div class="update--tel">
+                            <input type="text" placeholder="New number">
+                            <button type="submit" class="btn--blue"><i class="fas fa-location-arrow"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Ajouter nouvelle adresse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body my-3">
+                    <form action="" class="adresse--modal">
+                        <input type="text" placeholder="Titre , Ex: Travail">
+
+                        <select name="" id="">
+                            <option value="1">Pays</option>
+                            <option value="2">Cote d'ivoire</option>
+                        </select>
+
+                        <select name="" id="">
+                            <option value="1">Ville</option>
+                            <option value="2">Cote d'ivoire</option>
+                        </select>
+
+                        <textarea name="" id="" placeholder="indications"></textarea>
+
+                        <button type="submit" class="btn--blue w-100">Valider</button>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modifier adresse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body my-3">
+                    <form action="" class="adresse--modal">
+                        <input type="text" placeholder="Titre , Ex: Travail">
+
+                        <select name="" id="">
+                            <option value="1">Pays</option>
+                            <option value="2">Cote d'ivoire</option>
+                        </select>
+
+                        <select name="" id="">
+                            <option value="1">Ville</option>
+                            <option value="2">Cote d'ivoire</option>
+                        </select>
+
+                        <textarea name="" id="" placeholder="indications"></textarea>
+
+                        <button type="submit" class="btn--blue w-100">Valider</button>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button return top-->
+    <a href="#header">
+        <div class="button-return" id="btnReturn" >
+            <!-- <img src="icones/up-arrow.svg" alt="buttontop"> -->
+            <i class="fa fa-caret-up"></i>
+        </div>
+    </a>
+
+   
+
+    <!-- ************* -->
+    <!--**************  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- ********* -->
+    <script>
+        new WOW().init();
+    </script>
+    <!-- ********** -->
+
+    <script>
+        // faire afficher le button retur top
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('#btnReturn').fadeIn();
+            } else {
+                $('#btnReturn').fadeOut();
+            }
+        });
+
+        $('#btnReturn').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });	
+    </script>
+</body>
+</html>

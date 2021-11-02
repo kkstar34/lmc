@@ -1,0 +1,98 @@
+.container-onglets{
+    color: #000;
+    width: 100%;
+    height: 15%;
+    // display: flex;
+    z-index: 99;
+
+    @include respond (tab-port){
+        display: block;
+    }
+}
+
+// .container-onglets{
+//     color: $color-black;
+//     width: 100%;
+//     height: 15%;
+//     display: block;
+//     z-index: 99;
+
+//     // @include respond (tab-port){
+//     //     display: block;
+//     // }
+// }
+
+.onglets  {
+    width: 100%;
+    // padding-top: 1rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-wrap: wrap;
+    border-bottom: 1px solid $color-grey;
+    padding: 1rem;
+    // flex-direction: column;
+    cursor: pointer;
+    transition: all .5s;
+    
+
+
+    & p {
+        font-size: 2rem;
+        // font-weight: bold;
+        // text-transform: uppercase;
+        // color: $color-white;
+
+        @include respond (tab-port){
+            font-size: 1.8rem; 
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+.contenu {
+    width: 100%;
+    //opacity: 0;
+    // background-color: $color-white;
+    padding: 0rem 0 4rem;
+    display: none;
+}
+/* Anim */
+
+.active-onglet {
+    // background: $color-blue;
+    // border: 1px solid $color-blue;
+    color: $color-white ;
+    // border-radius: 15px;
+    transition: all 0.3s ease;
+    // box-shadow: 1px 1px 10px -3px rgba(0,0,0,0.65);
+    // border-bottom: 1px solid $color-blue;
+    z-index: 1;
+
+    & p {
+        color:$color-blue;
+    }
+}
+
+.activeContenu {
+    display: block;
+    animation: fade 0.5s forwards;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+// ******************************************************************

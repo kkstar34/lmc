@@ -1,0 +1,36 @@
+.table{
+    &--part{
+        @include respond (tab-port){
+            overflow: auto !important;
+        }
+    }
+    
+    & thead{
+        background-color: #F2F2F2;
+        border-bottom: none !important;
+        
+        & th{
+            padding: 2rem;
+            color: $color-black;
+            border-left: 1px solid #fff ;
+        }
+    }
+
+    & tbody{
+        background-color: $color-white;
+        min-height: 20rem !important;
+    }
+}
+
+.table--item{
+    display: flex;
+    align-items: center;
+
+    & img{
+        height: 4rem;
+    }
+
+    & p{
+        margin-left: 1rem;
+    }
+}

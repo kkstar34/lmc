@@ -1,0 +1,288 @@
+:root{
+    --color--body: #abf0ed;
+    --color1: blue;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+
+/* -----------body */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    border: none
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar{
+    width: 6px;
+    height: 100%;
+    background-color: rgba(209, 196, 196, 0.815); 
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color1);
+}
+
+  body{
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif !important;
+  }
+  
+  /* =============== */
+
+
+  .container__contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+
+
+  form{
+    border-radius: 10px;
+    height: 350px;
+    display: grid;
+    grid-template-rows: repeat(3, 60px);
+    grid-template-columns: 430px;
+    grid-template-areas: 
+    "i2"
+    "i3"
+    "sub";
+    gap: 30px 50px;
+    padding: 40px 35px;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  .email__container{
+    grid-area: i2;
+  }
+  
+  .password__container{
+    grid-area: i3;
+  }
+  
+  .icons {
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .icons:hover{
+    color: brown;
+  }
+  
+  .icons--password{
+    top: 43px;
+    right: 30px;
+  }
+  
+  #eye__slach__top{
+    display: none;
+  }
+  
+  #eye__slash__bottom{
+    display: none;
+  }
+  
+  .far{
+    position: absolute;
+  }
+  
+  .password__container, .email__container{
+    position: relative;
+  }
+
+  .password__container a, .google a, .redirect a {
+    text-decoration: none;
+  }
+
+  input[type="text"], input[type="password"]{
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+    outline: none;
+    font-size: 1.1rem;
+    border: .5px solid rgba(134, 133, 133, 0.178);
+  } 
+  
+  input[type="submit"] {
+    border: none;
+    background: var(--color1);
+    width: 100%;
+    height: 50px;
+    margin: 3.2rem auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    grid-area: sub;
+    outline: none;
+  } 
+  
+  input[type="submit"]:hover {
+    background: rgba(0, 0, 255, 0.822);
+  }
+  
+  input[type="text"]:focus, input[type="password"]:focus {
+    border: .4px solid blue;
+    box-shadow: none;
+  }
+  
+  .error span{
+    visibility: visible;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+  }
+  
+  .error span, .error input{
+    color: red;
+  }
+  .error input {
+    border: 1px solid rgba(255, 0, 0, 0.527);
+  }
+  
+  p {
+    width: 33%;
+    height: 5px;
+    margin: 5px 0 0;
+    border-radius: 100px;
+    visibility: hidden;
+    transition: 0.1s;
+  }
+  
+  .progressRed, .progressBlue, .progressGreen {
+    visibility: visible;
+    border-radius: 30px;
+    height: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  p, .progressRed {
+    background: red;
+    margin-top: 5px;
+  }
+  .progressRed {
+    width: 33%;
+  }
+  
+  .progressBlue {
+    background: aqua;
+    width: 67%;
+    margin-top: 5px;
+  }
+  
+  .progressGreen {
+    background: green;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .display{
+    display: none;
+    color: black;
+  }
+  
+  .visible{
+    display: initial;
+    color: brown
+  }
+
+
+  .google {
+    padding: .8rem 0;
+    background: rgba(66,133,244,1);
+    width: 430px;
+    border-radius: 5px;
+    font-weight: 400;
+  }
+
+  @media only screen and (max-width: 36em) {
+   form {
+    grid-template-columns: 290px;
+   }
+   .google{
+     width: 290px;
+     font-size:0.8rem;
+   }
+  }
+
+  .connect--tel {
+    background: rgba(107,114,128,1);
+  }
+
+  .trait--connect-tel, .line--one, .line--two {
+    background: rgba(187, 184, 184, 0.479);
+    width: 100%;
+    height: 1px;
+  }
+
+  .line--one, .line--two{
+    width: 50%;
+  }
+
+  .footer__element {
+    margin-top: -25px;
+  }
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(68, 67, 67, 0.616);
+  width: 100%;
+  height: 100%;
+  display: none;
+  
+}
+
+.active {
+  display: block;
+  transition: .2s ease-in-out;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 600px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(31, 30, 30, 0.562);
+  padding: 10px;
+}
+
+.popup .close-btn {
+  float: right;
+  color: #000;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: .1s ease-in-out;
+}
+.popup .close-btn:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+  
+  /*-------------------------------------RESPONSIVE DESIGN-------------------------------------*/
+  
+  @media screen and (max-width: 572px) {
+    .link--foot{
+        flex-direction: column;
+        line-height: 10px ;
+    }
+  }
